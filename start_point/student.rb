@@ -1,10 +1,8 @@
 class Student
 
-    def initialize(name, cohort, speech, language)
+    def initialize(name, cohort)
         @name = name
         @cohort = cohort
-        @speech = speech
-        @language = language
     end
 
     # getters
@@ -16,14 +14,6 @@ class Student
         @cohort
     end
 
-    def speech()
-        @speech
-    end
-
-    def language()
-        @language
-    end
-
     # setters
     def set_name(name)
         @name = name
@@ -31,14 +21,6 @@ class Student
 
     def set_cohort(cohort)
         @cohort = cohort
-    end
-
-    def set_speech(speech)
-        @speech = speech
-    end
-
-    def set_language(language)
-        @language = language
     end
 
     # student_can_talk
