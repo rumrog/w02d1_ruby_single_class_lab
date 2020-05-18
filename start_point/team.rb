@@ -1,26 +1,31 @@
 class Team
 
+    attr_reader :name :players
+    attr_accessor :coach
+
     def initialize(name, players, coach)
         @name = name
-        @players = players[]
+        @players = players
         @coah = coach
     end
 
-    # getters
-    def name()
-        @name
-    end
+    def add_new_player
 
-    def players()
-        @players
-    end
+    # # getters
+    # def name()
+    #     @name
+    # end
 
-    def coach()
-        @coach
-    end
+    # def players()
+    #     @players
+    # end
 
-    # setter
-    def set_coach(coach)
-        @coach = coach
-    end
+    # def coach()
+    #     @coach
+    # end
+
+    # # setter
+    # def set_coach(coach)
+    #     @coach = coach
+    # end
 end
