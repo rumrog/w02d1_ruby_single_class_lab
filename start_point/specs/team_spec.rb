@@ -32,4 +32,14 @@ class TestTeam < MiniTest::Test
         player_found = @team.find_player_by_name("Ahmed")
         assert_equal("Ahmed", player_found)
       end
+
+    def test_update_points__win
+        score = @team.update_points(1)
+        assert_equal(1, score)
+    end
+
+    def test_update_points__lost
+        score = @team.update_points(0)
+        assert_equal(0, score)
+    end
 end
