@@ -8,29 +8,23 @@ class TestTeam < MiniTest::Test
 
     def setup
 
-        # @team = {
-        #     name: "E40",
-        #     players: [],
-        #     coach: "Harrison"
-        # }
-
-        @team = Team.new("E40", ['Ahmed', 'Craig'], "Harrison")
+        @team = Team.new("Duck Lakes", ['Cody MacDuck', 'Chichon'], "Del Bosque")
 
     end
 
     def test_update_coach_name
-        @team.coach = "Alex"
-        assert_equal("Alex", @team.coach())
+        @team.coach = "Guardiola"
+        assert_equal("Guardiola", @team.coach())
     end
 
     def test_add_new_player
-        @team.add_new_player("Ollie")
-        assert_equal("Ollie", @team.players().last)
+        @team.add_new_player("Messi")
+        assert_equal("Messi", @team.players().last)
     end
 
     def test_find_player_by_name
-        player_found = @team.find_player_by_name("Ahmed")
-        assert_equal("Ahmed", player_found)
+        player_found = @team.find_player_by_name("Cody MacDuck")
+        assert_equal("Cody MacDuck", player_found)
       end
 
     def test_update_points__win
